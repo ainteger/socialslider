@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SocialSlider.Api.App_Start;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,6 +12,8 @@ namespace SocialSlider.Api
     {
         protected void Application_Start()
         {
+            AutofacConfig.RegisterDependencies();
+
             GlobalConfiguration.Configure(WebApiConfig.Register);
         }
     }

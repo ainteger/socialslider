@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SocialSlider.Core.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -9,5 +10,11 @@ namespace SocialSlider.Api.Controllers
 {
     public class ImageController : ApiController
     {
+        private readonly IImageServant ImageServant;
+
+        public ImageController(IImageServant imageServant)
+        {
+            ImageServant = imageServant;
+        }
     }
 }
