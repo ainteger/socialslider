@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SocialSlider.Core.Interfaces
+namespace SocialSlider.Interfaces
 {
     public interface IImageServant
     {

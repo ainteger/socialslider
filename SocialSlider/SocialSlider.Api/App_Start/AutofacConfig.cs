@@ -1,12 +1,8 @@
 ﻿using Autofac;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Web;
 using Autofac.Integration.WebApi;
-using SocialSlider.Core.Interfaces;
-using SocialSlider.Core.Servants;
+using SocialSlider.Interfaces;
+using SocialSlider.Servants;
 
 namespace SocialSlider.Api.App_Start
 {
@@ -21,7 +17,7 @@ namespace SocialSlider.Api.App_Start
             Assembly executingAssembly = Assembly.GetExecutingAssembly();            
             builder.RegisterApiControllers(executingAssembly);
             builder.RegisterType<ImageServant>().As<IImageServant>().InstancePerRequest();
-
+            builder.RegisterType<GoogleDriveServant>().As<IGoogleDriveServant>().InstancePerRequest();
 
             var container = builder.Build();
             
