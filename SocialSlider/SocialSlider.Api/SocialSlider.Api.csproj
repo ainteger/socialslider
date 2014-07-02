@@ -133,6 +133,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Servants\GoogleDriveServant.cs" />
     <Compile Include="Servants\ImageServant.cs" />
+    <Compile Include="Servants\InstagramServant.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

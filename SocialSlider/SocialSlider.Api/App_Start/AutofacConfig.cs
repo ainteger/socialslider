@@ -3,6 +3,7 @@ using System.Reflection;
 using Autofac.Integration.WebApi;
 using SocialSlider.Interfaces;
 using SocialSlider.Servants;
+using SocialSlider.Api.Servants;
 
 namespace SocialSlider.Api.App_Start
 {
@@ -18,6 +19,7 @@ namespace SocialSlider.Api.App_Start
             builder.RegisterApiControllers(executingAssembly);
             builder.RegisterType<ImageServant>().As<IImageServant>().InstancePerRequest();
             builder.RegisterType<GoogleDriveServant>().As<IGoogleDriveServant>().InstancePerRequest();
+            builder.RegisterType<InstagramServant>().As<IInstagramServant>().InstancePerRequest();
 
             var container = builder.Build();
             
