@@ -1,5 +1,6 @@
 ﻿using Google.Apis.Auth.OAuth2;
 using Google.Apis.Drive.v2;
+using Google.Apis.Drive.v2.Data;
 using Google.Apis.Services;
 using Google.Apis.Util.Store;
 using SocialSlider.Interfaces;
@@ -12,7 +13,7 @@ namespace SocialSlider.Servants
     {
         public void DriveTest()
         {
-            
+            //GetCredentials();
         }
 
         

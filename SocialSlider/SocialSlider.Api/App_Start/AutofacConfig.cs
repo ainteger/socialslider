@@ -8,9 +8,7 @@ using SocialSlider.Api.Servants;
 namespace SocialSlider.Api.App_Start
 {
     public class AutofacConfig
-    {
-        private const string AutofacConfigSection = "autofac";
-
+    {        
         public static void RegisterDependencies()
         {
             var builder = new ContainerBuilder();
