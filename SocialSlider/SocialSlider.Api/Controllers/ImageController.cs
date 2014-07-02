@@ -1,4 +1,4 @@
-﻿using SocialSlider.Core.Interfaces;
+﻿using SocialSlider.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +12,30 @@ namespace SocialSlider.Api.Controllers
     {
         private readonly IImageServant ImageServant;
 
-        public ImageController(IImageServant imageServant)
+        //temporary
+        private readonly IGoogleDriveServant GoogleDriveServant;
+
+        public ImageController(IImageServant imageServant, IGoogleDriveServant googleDriveServant)
         {
             ImageServant = imageServant;
+            GoogleDriveServant = googleDriveServant;
+        }
+
+        public HttpResponseMessage GetTest()
+        {
+            GoogleDriveServant.DriveTest();
+
+            return CreateApiResponse(statusCode: HttpStatusCode.NoContent);
+        }
+
+        protected virtual HttpResponseMessage CreateApiResponse(HttpStatusCode statusCode, object content = null, Uri locationUrl = null)
+        {
+            var response = ControllerContext.Request.CreateResponse(statusCode, content);
+
+            if (locationUrl != null)
+                response.Headers.Location = locationUrl;
+
+            return response;
         }
     }
 }

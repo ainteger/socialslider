@@ -1,4 +1,4 @@
-﻿namespace SocialSlider.Core.Interfaces
+﻿namespace SocialSlider.Interfaces
 {
     public interface IGoogleDriveServant
     {
