@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.30324.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialSlider.Api", "SocialSlider.Api\SocialSlider.Api.csproj", "{8E6B9836-43FB-48C4-812B-1A7404BB320C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialSlider.Core", "SocialSlider.Core\SocialSlider.Core.csproj", "{5BCDEA72-81C0-470A-925D-43B3CECF1027}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{8E6B9836-43FB-48C4-812B-1A7404BB320C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E6B9836-43FB-48C4-812B-1A7404BB320C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E6B9836-43FB-48C4-812B-1A7404BB320C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BCDEA72-81C0-470A-925D-43B3CECF1027}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BCDEA72-81C0-470A-925D-43B3CECF1027}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BCDEA72-81C0-470A-925D-43B3CECF1027}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BCDEA72-81C0-470A-925D-43B3CECF1027}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
