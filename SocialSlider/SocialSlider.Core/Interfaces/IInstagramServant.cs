@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SocialSlider.Core.Interfaces
 {
-    interface IInstagramServant
+    public interface IInstagramServant
     {
     }
 }
