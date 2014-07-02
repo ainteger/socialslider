@@ -5,17 +5,6 @@ VisualStudioVersion = 12.0.30324.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialSlider.Api", "SocialSlider.Api\SocialSlider.Api.csproj", "{8E6B9836-43FB-48C4-812B-1A7404BB320C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{EBEBA52C-CAA3-42E8-A612-D81333CF341F}"
-	ProjectSection(SolutionItems) = preProject
-		PublishScripts\AzureWebAppPublishModule.psm1 = PublishScripts\AzureWebAppPublishModule.psm1
-		PublishScripts\Publish-WebApplication.ps1 = PublishScripts\Publish-WebApplication.ps1
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{68E5F810-1DF1-4BA6-84D8-112CCD0EE608}"
-	ProjectSection(SolutionItems) = preProject
-		PublishScripts\Configurations\SocialSliderApi-WAWS-dev.json = PublishScripts\Configurations\SocialSliderApi-WAWS-dev.json
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,8 +18,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{68E5F810-1DF1-4BA6-84D8-112CCD0EE608} = {EBEBA52C-CAA3-42E8-A612-D81333CF341F}
 	EndGlobalSection
 EndGlobal
